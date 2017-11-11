@@ -7,10 +7,13 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "mock": "json-server mock/faker-data.js",
+    "mockdev": "npm run mock | npm run dev"
   },
   "dependencies": {
     "axios": "^0.17.0",
+    "cube-ui": "^1.0.1",
     "faker": "^4.1.0",
     "lodash": "^4.17.4",
     "vue": "^2.5.2",
